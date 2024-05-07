@@ -15,9 +15,31 @@
 --isthisevenbrown: burlywood;
 --cocoa:#341C02 ;
 --lightcaremel:#8D6942;
-
-
 }
+.container-fluid{
+  background-color: var(--cocoa);
+}
+
+.nav-item{
+  color: var(--isthisevenbrown);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @property --top-left {
   syntax: "<percentage>";

@@ -5,3 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  display: none;
+}
+
+:root{
+--primary: #8f4522;
+--secondary: #cd7b4c;
+--alternative: burlywood;
+--bgHeaderFooter:#341C02 ;
+--awesome:#8D6942;
+--bgCAbout: ;
+--mainBox-shadow: ;
+--card-box shadow: ;
+--text-shadow: ;
+--mainBg: ;
+--bgImg:  ;
+
+}
+
+@property --top-left {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --top-right {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --bottom-left {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --bottom-right {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}

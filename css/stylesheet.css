@@ -10,17 +10,12 @@
 }
 
 :root{
---primary: #8f4522;
---secondary: #cd7b4c;
---alternative: burlywood;
---bgHeaderFooter:#341C02 ;
---awesome:#8D6942;
---bgCAbout: ;
---mainBox-shadow: ;
---card-box shadow: ;
---text-shadow: ;
---mainBg: ;
---bgImg:  ;
+--cocoalight: #8f4522;
+--nearlyorange: #cd7b4c;
+--isthisevenbrown: burlywood;
+--cocoa:#341C02 ;
+--lightcaremel:#8D6942;
+
 
 }
 

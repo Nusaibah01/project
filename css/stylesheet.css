@@ -108,12 +108,21 @@ timeline{
 .timeline .event2:nth-child(even){
   margin-left: -130px;
 }
-.timeline .event3: :nth-child(odd){
+.timeline .event3:nth-child(odd){
   margin-left: -130px;
 }
 
-
-
+.skills{
+  background-color: #341C02;
+}
+.h1S{
+  font-family:"Bungee Shade", sans-serif;
+  color: black;
+}
+#p{
+  font-family: "Bungee", sans-serif;
+  color: white;
+}
 
 
 

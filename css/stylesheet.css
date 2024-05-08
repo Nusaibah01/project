@@ -15,14 +15,55 @@
 --isthisevenbrown: burlywood;
 --cocoa:#341C02 ;
 --lightcaremel:#8D6942;
-}
-.container-fluid{
-  background-color: var(--cocoa);
+--secondary: white;
 }
 
+.container-fluid{
+  background-color: #341C02;
+}
 .nav-item{
+ color: var(--isthisevenbrown) !important;
+}
+:is(.nav-link, a) {
+  color: var(--secondary);
+}
+img[alt='profile']{
+  width: 20rem;
+  object-fit: cover;
+  object-position: center;
+  clip-path: circle(50% at 50% 50%);
+}
+
+div[details] {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#name{
+  font-family:"Bungee Shade", sans-serif;
+  color:black;
+  font-size: 68px;
+  text-shadow: 2px 2px 8px var(--secondary);
+
+}
+#description{
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #8D6942;
+}
+#heading{
+  font-family:"Bungee Shade", sans-serif;
+  color: black;
+}
+#content{
+  font-family: "Bungee", sans-serif;
   color: var(--isthisevenbrown);
 }
+
 
 
 

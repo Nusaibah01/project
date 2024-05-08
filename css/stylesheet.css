@@ -19,13 +19,17 @@
 }
 
 .container-fluid{
-  background-color: #341C02;
+ background-color: #341C02;
+}
+.navbar-brand{
+ font-family:"Bungee Shade", sans-serif; 
 }
 .nav-item{
  color: var(--isthisevenbrown) !important;
 }
 :is(.nav-link, a) {
   color: var(--secondary);
+  font-family: "Bungee", sans-serif;
 }
 img[alt='profile']{
   width: 20rem;
@@ -55,6 +59,9 @@ div[details] {
   font-size: 30px;
   color: #8D6942;
 }
+#b1{
+  background-color: #8D6942;
+}
 #heading{
   font-family:"Bungee Shade", sans-serif;
   color: black;
@@ -62,6 +69,47 @@ div[details] {
 #content{
   font-family: "Bungee", sans-serif;
   color: var(--isthisevenbrown);
+}
+timeline{
+  list-style-type: none;
+  position: relative;
+}
+.timeline .event1{
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  background-color: white;
+  color: #8D6942;
+}
+.timeline .event2{
+  border-radius: 5px;
+  padding: 10px;
+  position:relative;
+  background-color: white;
+  color: #cd7b4c;
+}
+.timeline .event3{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  color: #8f4522;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: firebrick;
+}
+.timeline .event1:nth-child(odd){
+  margin-left: -130px;
+}
+.timeline .event2:nth-child(even){
+  margin-left: -130px;
+}
+.timeline .event3: :nth-child(odd){
+  margin-left: -130px;
 }
 
 

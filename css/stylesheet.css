@@ -8,7 +8,7 @@
 ::-webkit-scrollbar{
   display: none;
 }
-
+/* Main color palette */
 :root{
 --cocoalight: #8f4522;
 --nearlyorange: #cd7b4c;
@@ -17,7 +17,7 @@
 --lightcaremel:#8D6942;
 --secondary: white;
 }
-
+/*  */
 .container-fluid{
  background-color: #341C02;
 }
@@ -161,6 +161,23 @@ color:black;
 }
 .projectsText:hover {
   border: 1px solid black;
+}
+/* Reach Me */
+.reachme{
+  background-color: #cd7b4c;
+}
+.form{
+  text-align: left;
+  color: wheat;
+
+}
+.container-fluid {
+  color: wheat;
+  font-family: "Bungee", sans-serif;
+}
+.send{
+  background-color: black;
+  color: wheat;
 }
 
 

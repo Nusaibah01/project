@@ -35,14 +35,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#" id="Home">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">About</a>
+            <a class="nav-link" aria-current="page" href="#" id="About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Projects</a>
+            <a class="nav-link" aria-current="page" href="#" id="Projects">Projects</a>
           </li>
           <li class="nav-item">
             <li class="nav-item dropdown">
@@ -51,19 +51,19 @@
             </a>
 
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Education</a></li>
-              <li><a class="dropdown-item" href="#">Skills</a></li>
-              <li><a class="dropdown-item" href="#">Work Experiance</a></li>
+              <li><a class="dropdown-item" href="#" id="Education">Education</a></li>
+              <li><a class="dropdown-item" href="#" id="Skills">Skills</a></li>
+              <li><a class="dropdown-item" href="#" id="Work Experiance">Work Experiance</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              <li><a class="dropdown-item" href="#" id="Testimonials">Testimonials</a></li>
             </ul>
           </li>
            
            
            
-            <a class="nav-link" aria-current="page" href="#">Reach Me</a>
+            <a class="nav-link" aria-current="page" href="#" id="Reach Me">Reach Me</a>
           </li>
           
           
@@ -107,22 +107,28 @@
   
   <section>
     <h2 class="h2E">Education</h2>
-      <ul class="timeline">
-        <li class="event1">
-          <h3>The Leadership College</h3>
-          <p>2018-2023</p>
-        </li>
-      <li class="event2">
-        <h3>Khan Academy</h3>
-      <p>Computer Science Course: Internet Security
-        December 2023-Present
-      </p>
-     </li>
-     <li class="event3">
-      <h3>Life Choices Academy</h3>
-      <p>April 2024-present</p>`
-     </li>
-    </ul>
+      <div class="timeline">
+        <div class="container left">
+        <h3>2018-2023</h3>
+          <p>The Leadership College</p>
+        </div>
+      </div>
+      <div class="container right">
+       <div class="content">
+        <h3>December 2023-Present</h3>
+      <p>Khan Academy
+         Computer Science Course: Internet Security</p>
+        </div>
+        </div>
+     <div class="container left">
+      <div class="content">
+      <h3>April 2024-present</h3>
+      <p> 
+        Life Choices Academy
+     </p>
+    </div>
+    </div>
+    </div>
   </section>
   
     
@@ -165,8 +171,8 @@ Proficient in:
                     <div class="card-body">
                       <i class="bi bi-calculator-fill"></i>
                         <h4 class="card-title mt-3">Calculator</h4>
-                        <p class="card-text mt-3"> I designed a machine which allows people to do math operations more easily. More commonly
-                          known as a caculator.
+                        <p class="card-text mt-3"> Using HTML and CSS I designed 
+                        a caculator.
                         </p>
                     </div>
                 </div>  
@@ -176,8 +182,7 @@ Proficient in:
                     <div class="card-body">
                       <i class="bi bi-keyboard"></i>
                         <h4 class="card-title mt-3">KeyBoard</h4>
-                        <p class="card-text mt-3">I designed an input device used to enter characters and functions into a computer system
-                          by pressing buttons, or keys. Also known as a keyboard.
+                        <p class="card-text mt-3">I designed a Keyboard using Html and CSS
                         </p>
                     </div>
                 </div>  
@@ -188,8 +193,7 @@ Proficient in:
                     <div class="card-body">
                       <i class="bi bi-card-image"></i>
                         <h4 class="card-title mt-3">Flip Card</h4>
-                        <p class="card-text mt-3"> I designed a simple flip card which showcases a character from  my favourite animation movie,
-                           Kiki's Delivery Service
+                        <p class="card-text mt-3">Html and CSS simple flipcard.
                         </p>
                     </div>
                 </div>  
@@ -202,8 +206,7 @@ Proficient in:
                     <div class="card-body">
                       <i class="bi bi-person-workspace"></i>
                         <h4 class="card-title mt-3">Hulu Clone</h4>
-                        <p class="card-text mt-3"> I designed a Hulu Website clone which mimics the design and content of the original Hulu platform. 
-                          The replication is limited to the landing page</p>
+                        <p class="card-text mt-3">Work in progress</p>
                     </div>
                 </div>  
             </div>
@@ -213,8 +216,7 @@ Proficient in:
                     <div class="card-body">
                       <i class="bi bi-people"></i>
                          <h4 class="card-title mt-3">LCA studio</h4>
-                        <p class="card-text mt-3"> At LifeChoices Academy myself, Zizipho, Yakupha and Asheeka designed an eccommerce website using html and 
-                          css
+                        <p class="card-text mt-3"> Work in progresss
                         </p>
                     </div>
                 </div>  
@@ -236,46 +238,66 @@ Proficient in:
   <h2> What my collegues have to say about me: </h2>
 </div>
 <div class="testimonials__grid">
-<div class="card"></div>
+<div class="card">
+<span><div class="card"></div></span>
+  <span><i class="bi bi-quote"></i></span>
+  <p>Nusaibah is kind, helpful and easily approachable. She is amazing to work with, she makes a great team player!</p>
+  <i class="bi bi-quote"></i>
+  <hr>
+  <img src="https://nusaibah01.github.io/all-images/images/Thutz1.jpg" alt="Thutuza">
+  <p class="name">Thutuza Potswayo</p>
+  <p><small>Peer at LifeChoices Academy</small></p>
+</div>
+</div>
+    
+
+    <div class="card">
 <span><i class="bi bi-quote"></i></span>
-<p>Nusaibah is kind, helpful and easily approachable. She is amazing to work with, she makes a great team player!</p>
+<p>Nusaibah is a  dedicated worker that uses her insight to accomplish her goals and help those contribute to those around her. 
+  Her commitment and dedication shine through with all that she applies herself at.</p>
 <hr>
-<img src="https://nusaibah01.github.io/all-images/images/Thutz1.jpg" alt="Thutuza">
-<p class="name">Thutuza Potswayo</p>
+<img src="https://nusaibah01.github.io/all-images/images/Abdu.png" alt="Abdurahman">
+<p class="name">Aburahman Charif</p>
+<p><small>Peer at LifeChoices Academy</small></p>
 </div>
   
-  <p><small>Peer at LifeChoices Academy</small></p>
+<div class="card">
+<span><i class="bi bi-quote"></i></span>
+<p>
+  Nuisabah is an absolute gem, Calm, kind, and incredibly diligent, she embodies grace and dedication.
+  A true team player, she is always focused on her tasks, ensuring a harmonious work environment. Additionally, she is a great person to talk to,
+  who under pressure, perseveres until the job is done.</p>
+<hr>
+<img src="https://nusaibah01.github.io/all-images/images/Lamla.jpg" alt="Lamla">
+<p class="name">Lamlankosi </p>
+<p><small>Peer at LifeChoices Academy</small></p>
+</div>
+</div>
+  
+<div class="card">
+<span><i class="bi bi-quote"></i></span>
+<p></p>
+<i class="bi bi-quote"></i>
+<hr>
+<img src="https://nusaibah01.github.io/all-images/images/Erin.jpg" alt="Erin">
+<p class="name">Erin Williams</p>
+<p><small>Peer at LifeChoices Academy</small></p>
+</div>
+</div>
   
 
-
-
-
-
-<h2>person 2</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora soluta rem iusto exercitationem laborum error animi, porro
-   sunt necessitatibus nemo, optio at, impedit repellendus sit commodi officia distinctio illo non.</p>
-
-
-
-
-
-<h2>Person 3</h2>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum est expedita sit asperiores praesentium commodi adipisci, rerum tempore dolores necessitatibus,
-   doloremque dignissimos dolore neque similique voluptatem fuga laudantium beatae facilis.</p>
-
-
-<h2>Person 4</h2>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi sapiente, asperiores quia, earum distinctio perferendis dolore ullam tenetur porro aperiam, ea 
-  itaque voluptas! Eius praesentium est molestiae amet perspiciatis eveniet!</p>
-
-
-
-
-<h2>Lecturer</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi sequi tenetur nesciunt at odit aut saepe magni error? Eius laboriosam beatae tenetur eligendi 
-    maxime minima laudantium voluptas non ipsum.</p>
-    
-  </div>
+<div class="card">
+<span><i class="bi bi-quote"></i></span>
+<p></p>
+<i class="bi bi-quote"></i>
+<hr>
+<img src="" alt="">
+<p class="name"></p>
+<p><small>Lecturer at Life Choices Academy</small></p>
+</div>
+</div>
+  
+</div>
   </section>
 
 <!-- Reach Me -->

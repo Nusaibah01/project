@@ -22,8 +22,9 @@
 }
 /*  */
 .container-fluid{
- background-color: #341C02;
+ background-color: var(--secondary);
 }
+/* Navigation */
 .navbar-brand{
  font-family:"Bungee Shade", sans-serif; 
 }
@@ -31,7 +32,7 @@
  color: var(--isthisevenbrown) !important;
 }
 :is(.nav-link, a) {
-  color: var(--secondary);
+  color: var(--cocoa);
   font-family: "Bungee", sans-serif;
 }
 img[alt='profile']{
@@ -74,47 +75,112 @@ div[details] {
   font-family: "Bungee", sans-serif;
   color: var(--isthisevenbrown);
 }
-timeline{
-  list-style-type: none;
+/*  */
+.timeline{
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
 }
-.timeline .event1{
-  border-radius: 5px;
-  padding: 10px;
-  position: relative;
-  background-color: white;
-  color: #8D6942;
-}
-.timeline .event2{
-  border-radius: 5px;
-  padding: 10px;
-  position:relative;
-  background-color: white;
-  color: #cd7b4c;
-}
-.timeline .event3{
-  border-radius: 5px;
-  padding: 10px;
-  background-color: white;
-  color: #8f4522;
-}
-.timeline::before {
+
+.timeline::after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: firebrick;
+  width: 6px;
+  background: #fff;
+  left: 50%;
+  margin-left: -3px;
 }
-.timeline .event1:nth-child(odd){
-  margin-left: -130px;
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
 }
-.timeline .event2:nth-child(even){
-  margin-left: -130px;
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: -17px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  border: 4px solid #ff9f55;
 }
-.timeline .event3:nth-child(odd){
-  margin-left: -130px;
+
+.left {
+  left: 0;
 }
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.left::before {
+  content: '';
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 22px;
+  right: 30px;
+  border: 10px solid var(--cocoa);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--cocoa);
+}
+
+.right::before {
+  content: '';
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  border: 10px solid #fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.content {
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+/* Mobile version */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+    z-index: 1;
+  }
+
+  .right {
+    left: 0;
+  }
+}
+
 
 .skills{
   background-color: #341C02;
@@ -127,6 +193,7 @@ timeline{
   font-family: "Bungee", sans-serif;
   color: white;
 }
+/* Work Experiance */
 .h1E{
 font-family: "Bungee Shade", sans-serif;
 color:black;
@@ -139,10 +206,10 @@ color:black;
   font-family: "Bungee", sans-serif;
   color: white;
 }
-
+/* Projects */
 #p1{
   font-family: "Bungee Shade", sans-serif;
-  color: white;
+  color: var(--cocoa);
   
 }
 .projectsText.card {
@@ -160,37 +227,138 @@ color:black;
   text-align: center;
 }
 .card:hover .projectsIcon {
-  color: firebrick ;
+  color: var(--isthisevenbrown) ;
 }
 .projectsText:hover {
   border: 1px solid black;
 }
-/* Reach Me */
-.reachme{
-  background-color: #cd7b4c;
+
+/* Testimonials */
+
+
+
+.section__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Bungee Shade" ,sans-serif;
+  color: #cd7b4c;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
-.form{
-  text-align: left;
-  color: wheat;
 
-}
-.container-fluid {
-  color: wheat;
-  font-family: "Bungee", sans-serif;
-}
-.send{
-  background-color: black;
-  color: wheat;
+.header {
+  margin-bottom: 2rem;
 }
 
+.header p {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
+.header h1 {
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
 
+.testimonials__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
 
+.card {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  background-color: var(--extra-light);
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
+.card i {
+  font-size: 2.5rem;
+  color: gold;
+}
 
+.card p {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
+.card hr {
+  width: 40px;
+  margin: auto;
+  color: var(--text-light);
+}
 
+.card img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+}
 
+.card .name {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.card .name:hover {
+  color: var(--primary-color);
+}
+
+.footer h4 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  max-width: 450px;
+  margin: auto;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (width < 900px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (width < 600px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 @property --top-left {
   syntax: "<percentage>";
@@ -211,4 +379,23 @@ color:black;
   syntax: "<percentage>";
   inherits: false;
   initial-value: 0%;
+}
+/* Reach Me */
+.reachme{
+  background-color: #cd7b4c;
+}
+.form{
+  text-align: left;
+  color: wheat;
+
+}
+.container-fluid {
+  color: wheat;
+  font-family: "Bungee", sans-serif;
+}
+.send{
+  background-color: wheat;
+  color: var(--lightcaremel);
+  border: #fff;
+  text-align: left;
 }

@@ -25,8 +25,12 @@
  background-color: var(--secondary);
 }
 /* Navigation */
+.navbar navbar-expand-lg bg-body-tertiary{
+  background-color: #cd7b4c;
+}
 .navbar-brand{
  font-family:"Bungee Shade", sans-serif; 
+ 
 }
 .nav-item{
  color: var(--isthisevenbrown) !important;

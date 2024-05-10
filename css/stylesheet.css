@@ -77,6 +77,8 @@ div[details] {
 #heading{
   font-family:"Bungee Shade", sans-serif;
   color: black;
+  margin: 0 auto;
+  text-align: center;
 }
 #content{
   font-family: "Bungee", sans-serif;
@@ -84,7 +86,12 @@ div[details] {
 }
 
 /* Education*/
-
+.Eh2{
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Bungee Shade", sans-serif;
+  color: #341C02;
+}
 /* Skill's */
 .skills{
   background-color: white ;
@@ -92,6 +99,8 @@ div[details] {
 .h1S{
   font-family:"Bungee Shade", sans-serif;
   color: black;
+  margin: 0 auto;
+  text-align: center;
 }
 #p{
   font-family: "Bungee", sans-serif;
@@ -101,14 +110,24 @@ div[details] {
 .h1E{
 font-family: "Bungee Shade", sans-serif;
 color:black;
+margin: 0 auto;
+text-align: center;
 }
 .jobtitle{
   font-family: "Bungee", sans-serif;
-  color:whitesmoke
+  color: var(--cocoa);
+  margin: 0 auto;
+  text-align: center;
 }
 .jobdetails{
   font-family: "Bungee", sans-serif;
-  color: white;
+  color: var(--cocoalight);
+  margin:  0 auto;
+  text-align: center;
+}
+.family{
+  margin: 0 auto;
+  text-align: center;
 }
 /* Projects */
 #p1{
@@ -155,7 +174,12 @@ color:black;
   display: flex;
   align-items: center;
 }
-
+#Th1{
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  font-family: "Bungee Shade", sans-serif;
+}
 .header {
   margin-bottom: 2rem;
 }
@@ -286,6 +310,12 @@ color:black;
   initial-value: 0%;
 }
 /* Reach Me */
+.Rmh2{
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Bungee Shade", sans-serif;
+  color: #341C02;
+}
 .reachme{
   background-color: white;
 }

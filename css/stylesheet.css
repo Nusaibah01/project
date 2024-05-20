@@ -244,6 +244,8 @@ div[details] {
 /* Skill's */
 #skills{
   background-color: white ;
+  font-family: "Bungee Shade", sans-serif;
+  color: black;
 }
 .h1S{
   font-family:"Bungee Shade", sans-serif;

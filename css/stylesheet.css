@@ -77,13 +77,84 @@ div[details] {
 #heading{
   font-family:"Bungee Shade", sans-serif;
   color: black;
+  margin: 0 auto;
+  text-align: center;
 }
+.text center img{
+  size-adjust: 10px;
+}
+
+)
 #content{
   font-family: "Bungee", sans-serif;
   color: var(--isthisevenbrown);
 }
-
+.imageAboutPage{
+  height: 120vh;
+  width: 120vh;
+}
 /* Education*/
+#h2E{
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Bungee Shade", sans-serif;
+}
+
+.timeline{
+  position: relative;
+  padding: 20px 0;
+  }
+  .timeline::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #341C02;
+   transform: translateX(-50%);  
+  }
+.timeline .item{
+  position: relative;
+  margin-bottom: 50px;
+}
+.timeline .content{
+  padding: 20px;
+  background-color: #cd7b4c;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px var(--cocoalight);
+  }
+  @media (min-width: 768px) {
+    .timeline:before {
+      width: 4px;
+    }
+  
+    .timeline-item {
+      display: flex;
+      margin-bottom: 100px;
+    }
+  
+    .timeline-content {
+      flex: 1;
+      margin-left: 50px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Skill's */
 #skills{
@@ -97,7 +168,7 @@ div[details] {
 }
 #p{
   font-family: "Bungee", sans-serif;
-  color: wheat;
+  color: bl;
 }
 /* Work Experiance */
 .header{
@@ -146,31 +217,95 @@ margin:  0 auto;
 }
 
 /* Testimonials */
-
 .testimonials{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  background-color: #8D6942;
+  padding: 40px 0;
 }
-.testimonials .testimonials{
-  background-color: var(--lightcaremel);
-  padding: 20px;
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
   text-align: center;
+}
+#TH2{
+font-family: "Bungee Shade", "sans-serif";
+color: black;
+}
+.testimonial-row{
+  display: grid;
+  grid-template-columns: repeat(3,1fr), repeat(2,1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.name{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.testimonial {
+  font-size: 14px;
+  color: var(--lightcaremel);
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 30px #8f4522;
+  cursor: pointer;
+}
+.testimonial i{
+  color: var(--nearlyorange) ;
+  font-size: 2.5rem;
+}
+.testimonial p{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.testimonial hr{
+  width: 60px;
+  margin: auto;
+  color: lightpink
+}
+.testimonial img{
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 100%;
+}
+.testimonial .name{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--cocoalight);
+  transition: 0.3s;
+}
+.testimonial .name:hover{
+color: var(--isthisevenbrown);
+}
+.testimonial p:hover{
+  color: var(--isthisevenbrown);
+}
+/* @property --top-left {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --top-right {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --bottom-left {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --bottom-right {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+} */
 /* Reach Me */
 .reachme{
   background-color: white;

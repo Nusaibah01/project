@@ -92,6 +92,18 @@ div[details] {
 #education{
   background: #8f4522;
 }
+#Edu{
+  font-family: "Bungee Shade", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+.holder h3{
+  font-family:"Bungee", sans-serif;
+}
+.holder p{
+  font: bolder;
+}
 .timeline{
  max-width: 1200px;
   position: relative;
@@ -349,6 +361,10 @@ color: var(--isthisevenbrown);
 .testimonial p:hover{
   color: var(--isthisevenbrown);
 }
+
+
+
+
 /* @property --top-left {
   syntax: "<percentage>";
   inherits: false;
@@ -393,6 +409,7 @@ color: var(--isthisevenbrown);
   text-align: center;
   font-family: "Bungee Shade";
   color: #cd7b4c;
+}
 @media (max-width: 600px) {
   .footer-about, .footer-services, .footer-contact, .footer-follow {
       width: 100%;

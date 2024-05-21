@@ -302,7 +302,7 @@ margin:  0 auto;
 
 
 body {
-  /* font-family: 'Noto Serif', serif; */
+
   font-family: "Poppins", sans-serif;
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -310,8 +310,7 @@ body {
   display: flex;
   align-items: center;
 }
-
-.section__container {
+.Testimonials container{
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -319,26 +318,22 @@ body {
   text-align: center;
 }
 
-.header {
+#TH2 {
   margin-bottom: 2rem;
-}
-
-.header p {
-  letter-spacing: 2px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.header h1 {
-  font-family: "Noto Serif", serif;
+  font-family: "Bungee Shade", sans-serif serif;
   font-size: 2rem;
   font-weight: 900;
 }
 
+.testimonial p {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+}
 .testimonials-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -347,7 +342,7 @@ body {
   padding: 2rem;
   display: grid;
   gap: 1rem;
-  background-color: var(--extra-light);
+  background-color: var(--cocoalight);
   border-radius: 5px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -386,19 +381,8 @@ body {
 }
 
 .testimonial .name:hover {
-  color: var(--isthisevenbrown);
-}
-
-
-
-
-
-
-
-
-
-
-text-align: center;
+  color: var(--isthisevenbrown
+  text-align: center;
 }
 
 .testimonial img {
